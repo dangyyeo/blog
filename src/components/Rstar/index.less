@@ -1,0 +1,29 @@
+.wrap {
+  position: relative;
+  max-width: 100vw;
+  max-height: 100vh;
+	background-color: #000;
+
+  &:after {
+    content: '';
+    background-image: url(../../assets/star.jpeg);
+    background-repeat:no-repeat;
+    height: 80vh;
+    position: absolute;
+    z-index: 30;
+    left: 0;
+    right: 0;
+    filter:alpha(opacity=15);
+    -moz-opacity:0.15;
+    -khtml-opacity: 0.15;
+    opacity: 0.15;
+  }
+
+  .canvas {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: baseline;
+    z-index: -1;
+  }
+}
