@@ -12,6 +12,7 @@ const Home = () => {
       <Rstar />
       <div className={styles.content}>
         <h1>Yyeo的个人网站<img src={avatar} alt="icon"/></h1>
+        <h1>It’s building...</h1>
       </div>
       <RFooter className={styles.footer} links={LINKS} quotes={QUOTES}/>
     </div>
