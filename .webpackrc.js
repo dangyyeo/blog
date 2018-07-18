@@ -1,12 +1,7 @@
-let { version } = require('./package.json');
-
-version = version.replace(/\./g, '_');
-
 export default {
   entry: './src/index.js',
   // theme: "./theme.config.js",
   publicPath: '/',
-  outputPath: `./dist/${version}`,
   extraBabelPlugins: [
     ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]
   ],
@@ -26,7 +21,11 @@ export default {
   },
   html: {
     "template": "./src/index.ejs",
-    // "favicon": "./public/favicon.ico"
+    // "favicon": "./public/favicon.ico",
+    minify: {
+      collapseWhitespace: true,
+    },
+    hash: true,
   },
   alias:{
     '@': `${__dirname}/src`,
