@@ -16,7 +16,7 @@ export const LINKS = [
   {
     key: 'wechat',
     title: <Icon type="wechat" />,
-    href: 'javascript:;',
+    href: `javascript:;`,
     blankTarget: false,
   }
 ];

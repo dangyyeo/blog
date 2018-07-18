@@ -1,10 +1,10 @@
 import React from 'react';
 import { connect } from 'dva';
-import Rstar from '../../components/Rstar';
-import RFooter from '../../components/Footer';
-import { LINKS, QUOTES } from '../../utils/constants';
+import Rstar from 'components/Rstar';
+import RFooter from 'components/Footer';
+import { LINKS, QUOTES } from 'utils/constants';
+import avatar from 'assets/avatar.png';
 import styles from './index.less';
-import avatar from '../../assets/avatar.png';
 
 const Home = () => {
   return (
